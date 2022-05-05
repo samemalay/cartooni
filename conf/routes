@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET     /assets/*file              controllers.Assets.versioned(path="/public", file: Asset)
+
++nocsrf
+POST    /picture                    controllers.PixController.upload()
+GET     /original                   controllers.PixController.retrieveOriginal(file: String)
+GET     /converted                  controllers.PixController.retrieveConverted(file: String)
+GET     /list                       controllers.PixController.list()
+

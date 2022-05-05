@@ -1,0 +1,12 @@
+logs
+target
+bin
+**/.DS_Store
+/.idea
+/.idea_modules
+/.classpath
+/.cache-main
+/.project
+/.settings
+/RUNNING_PID
+
