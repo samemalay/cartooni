@@ -1,9 +1,11 @@
 # Sample Scala Play Microservice 
 
 __Description__
+
 This application provides APIs to upload (and convert) plus download pictures.
 
 __Technology__
+
 Scala, SBT and Play fraemwork
 (sbt 1.3.13 Scala 2.12.8, Play 2.8)
 
@@ -15,9 +17,11 @@ __How to run__
 * issue the command `sbt run` (or run the start.sh script)
 * be patient when you run for the first time (may take some time with downloads etc.)
 * The application runs on localhost:9000 
-* Unit test included in the project and can be run using sbt
+* Unit test included in the project and can be run using sbt    
+
 
 __End points__
+
 It has endpoints as stated below through curl commands and description
 
 curl -F image=@/Users/Malay/test/3M.png http://localhost:9000/picture
@@ -42,6 +46,7 @@ I have used ImageIO and greyscaled the image instead.
 4. Unit tests has been provided at the service level (Actual APIs can be tested by running the application)
 
 __Before production__
+
 This is not production ready
 * Actual cartoonification needs to implemented
 * Security features for APIs (Basic or token based) could be added
